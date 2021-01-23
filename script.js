@@ -8,7 +8,7 @@
     var ratevalue=parseFloat(document.getElementById("interestRateate").value);
     var principal=parseFloat(document.getElementById("amount").value);
     var time=parseFloat(document.getElementById("nberOfYears").value);
-    var total= parseFloat(principal*(1+((ratevalue)*(time))));
+    var total= parseFloat(principal*(1+((ratevalue/100)*(time))));
     if(document.getElementById("amount").value==""){
       alert("Please enter the principal amount");
     }
